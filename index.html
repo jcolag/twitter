@@ -33,7 +33,7 @@
 				<div class="tweets-search">
 					<div id="search" class="tweets-search"></div>
 					<link href="/twitter/pagefind/pagefind-ui.css" rel="stylesheet">
-					<script src="/twitter/pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false, processResult: function (result) { if (!result.url.indexOf(prefix) >= 0) { result.url = `/twitter${result.url}`; } console.log(result); return result; } });"></script>
+					<script src="/twitter/pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false, processResult: function (result) { let prefix = 'twitter';if (result.url.indexOf(prefix) < 0) { result.url = `/${prefix}${result.url}`; } console.log(result); return result; } });"></script>
 				</div>
 			</template>
 		</is-land>
@@ -200,7 +200,7 @@ For the first time in 2023, it will be an official holiday in California, home t
 				<a href="/twitter/" class="tag tag-naked tag-lite tag-avatar"><img src="https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fjohn.colagioia.net%2F/" width="52" height="52" alt="jcolag’s avatar" class="tweet-avatar"></a>
 				
 				<time class="tag tag-naked tag-lite dt-published" datetime="2023-01-26T14:05:45.000Z">2023 Jan 26</time>
-				<span class="tag tag-naked tag-lite sr-only">Mood +<strong class="tweet-sentiment">1</strong> 🙂</span>
+				<span class="tag tag-naked tag-lite sr-only">Mood +<strong class="tweet-sentiment">2</strong> 🙂</span>
 			</span>
 		</li><li id="1618294890869231625" class="tweet h-entry" data-pagefind-index-attrs="id">
 		
@@ -338,13 +338,13 @@ About two weeks after that rally, Tulsa County reported that it was now dealing 
 			<div class="lo-c">
 				<h3>Most Retweeted</h3>
 				<ol>
-					<li><a href="https://twitter.com/michaelharriot">michaelharriot</a> 10 retweets</li><li><a href="https://twitter.com/SethAbramson">SethAbramson</a> 10 retweets</li><li><a href="https://twitter.com/BreeNewsome">BreeNewsome</a> 7 retweets</li><li><a href="https://twitter.com/cmclymer">cmclymer</a> 6 retweets</li><li><a href="https://twitter.com/RBReich">RBReich</a> 6 retweets</li><li><a href="https://twitter.com/APWUnational">APWUnational</a> 6 retweets</li><li><a href="https://twitter.com/OhNoSheTwitnt">OhNoSheTwitnt</a> 6 retweets</li><li><a href="https://twitter.com/PublicDomainRev">PublicDomainRev</a> 6 retweets</li><li><a href="https://twitter.com/oneunderscore__">oneunderscore__</a> 6 retweets</li><li><a href="https://twitter.com/jennycohn1">jennycohn1</a> 6 retweets</li>
+					<li><a href="https://twitter.com/michaelharriot">michaelharriot</a> 10 retweets</li><li><a href="https://twitter.com/SethAbramson">SethAbramson</a> 10 retweets</li><li><a href="https://twitter.com/BreeNewsome">BreeNewsome</a> 7 retweets</li><li><a href="https://twitter.com/cmclymer">cmclymer</a> 6 retweets</li><li><a href="https://twitter.com/RBReich">RBReich</a> 6 retweets</li><li><a href="https://twitter.com/APWUnational">APWUnational</a> 6 retweets</li><li><a href="https://twitter.com/OhNoSheTwitnt">OhNoSheTwitnt</a> 6 retweets</li><li><a href="https://twitter.com/oneunderscore__">oneunderscore__</a> 6 retweets</li><li><a href="https://twitter.com/jennycohn1">jennycohn1</a> 6 retweets</li><li><a href="https://twitter.com/PublicDomainRev">PublicDomainRev</a> 6 retweets</li>
 				</ol>
 			</div>
 			<div class="lo-c">
 				<h3>Most Retweeted (Last 12 months)</h3>
 				<ol>
-					<li><a href="https://twitter.com/mattsheffield">mattsheffield</a> 2 retweets</li><li><a href="https://twitter.com/MNateShyamalan">MNateShyamalan</a> 2 retweets</li><li><a href="https://twitter.com/koleross">koleross</a> 2 retweets</li><li><a href="https://twitter.com/anildash">anildash</a> 2 retweets</li><li><a href="https://twitter.com/ScottHech">ScottHech</a> 2 retweets</li><li><a href="https://twitter.com/kibblesmith">kibblesmith</a> 2 retweets</li><li><a href="https://twitter.com/OhNoSheTwitnt">OhNoSheTwitnt</a> 2 retweets</li><li><a href="https://twitter.com/DKThomp">DKThomp</a> 2 retweets</li><li><a href="https://twitter.com/golikehellmachi">golikehellmachi</a> 1 retweet</li><li><a href="https://twitter.com/joindiaspora">joindiaspora</a> 1 retweet</li>
+					<li><a href="https://twitter.com/mattsheffield">mattsheffield</a> 2 retweets</li><li><a href="https://twitter.com/MNateShyamalan">MNateShyamalan</a> 2 retweets</li><li><a href="https://twitter.com/koleross">koleross</a> 2 retweets</li><li><a href="https://twitter.com/anildash">anildash</a> 2 retweets</li><li><a href="https://twitter.com/ScottHech">ScottHech</a> 2 retweets</li><li><a href="https://twitter.com/OhNoSheTwitnt">OhNoSheTwitnt</a> 2 retweets</li><li><a href="https://twitter.com/DKThomp">DKThomp</a> 2 retweets</li><li><a href="https://twitter.com/golikehellmachi">golikehellmachi</a> 1 retweet</li><li><a href="https://twitter.com/joindiaspora">joindiaspora</a> 1 retweet</li><li><a href="https://twitter.com/GailSimone">GailSimone</a> 1 retweet</li>
 				</ol>
 			</div>
 		</div>
@@ -368,20 +368,20 @@ About two weeks after that rally, Tulsa County reported that it was now dealing 
 		<h3>I’ve sent someone a mention 43 times (0.5%)</h3>
 
 		<h2 id="links">Most Frequent Sites I’ve Linked To</h2>
-		<h3>64.8% of the links I’ve posted are using the <code>https:</code> protocol  (1,660 of 2,563)</h3>
-		<h3>99.7% of the links I’ve posted in the last 12 months are using the <code>https:</code> protocol  (298 of 299)</h3>
+		<h3>73.9% of the links I’ve posted are using the <code>https:</code> protocol  (1,893 of 2,563)</h3>
+		<h3>100.0% of the links I’ve posted in the last 12 months are using the <code>https:</code> protocol  (297 of 297)</h3>
 
 		<div class="lo" style="--lo-stackpoint: 20em">
 			<div class="lo-c">
 				<h4>Top Domains</h4>
 				<ol>
-					<li><a href="https://buff.ly">buff.ly</a> 877 tweets</li><li><a href="https://futurity.org">futurity.org</a> 217 tweets</li><li><a href="https://vice.com">vice.com</a> 154 tweets</li><li><a href="https://theconversation.com">theconversation.com</a> 104 tweets</li><li><a href="https://qz.com">qz.com</a> 83 tweets</li><li><a href="https://theintercept.com">theintercept.com</a> 78 tweets</li><li><a href="https://globalvoices.org">globalvoices.org</a> 75 tweets</li><li><a href="https://otherwords.org">otherwords.org</a> 71 tweets</li><li><a href="https://fastcompany.com">fastcompany.com</a> 67 tweets</li><li><a href="https://twitter.com">twitter.com</a> 51 tweets</li>
+					<li><a href="https://futurity.org">futurity.org</a> 217 tweets</li><li><a href="https://vice.com">vice.com</a> 168 tweets</li><li><a href="https://theconversation.com">theconversation.com</a> 106 tweets</li><li><a href="https://qz.com">qz.com</a> 99 tweets</li><li><a href="https://theintercept.com">theintercept.com</a> 79 tweets</li><li><a href="https://globalvoices.org">globalvoices.org</a> 75 tweets</li><li><a href="https://otherwords.org">otherwords.org</a> 71 tweets</li><li><a href="https://fastcompany.com">fastcompany.com</a> 67 tweets</li><li><a href="https://nytimes.com">nytimes.com</a> 55 tweets</li><li><a href="https://twitter.com">twitter.com</a> 53 tweets</li>
 				</ol>
 			</div>
 			<div class="lo-c">
 				<h4>Top Hosts</h4>
 				<ol>
-					<li><a href="https://buff.ly">buff.ly</a> 877 tweets</li><li><a href="https://www.futurity.org">www.futurity.org</a> 217 tweets</li><li><a href="https://www.vice.com">www.vice.com</a> 149 tweets</li><li><a href="https://theconversation.com">theconversation.com</a> 104 tweets</li><li><a href="https://qz.com">qz.com</a> 83 tweets</li><li><a href="https://theintercept.com">theintercept.com</a> 78 tweets</li><li><a href="https://globalvoices.org">globalvoices.org</a> 75 tweets</li><li><a href="https://otherwords.org">otherwords.org</a> 71 tweets</li><li><a href="https://www.fastcompany.com">www.fastcompany.com</a> 67 tweets</li><li><a href="https://twitter.com">twitter.com</a> 50 tweets</li>
+					<li><a href="https://www.futurity.org">www.futurity.org</a> 217 tweets</li><li><a href="https://www.vice.com">www.vice.com</a> 149 tweets</li><li><a href="https://theconversation.com">theconversation.com</a> 106 tweets</li><li><a href="https://qz.com">qz.com</a> 99 tweets</li><li><a href="https://theintercept.com">theintercept.com</a> 79 tweets</li><li><a href="https://globalvoices.org">globalvoices.org</a> 75 tweets</li><li><a href="https://otherwords.org">otherwords.org</a> 71 tweets</li><li><a href="https://www.fastcompany.com">www.fastcompany.com</a> 67 tweets</li><li><a href="https://twitter.com">twitter.com</a> 52 tweets</li><li><a href="https://www.nytimes.com">www.nytimes.com</a> 51 tweets</li>
 				</ol>
 			</div>
 		</div>
@@ -397,12 +397,12 @@ About two weeks after that rally, Tulsa County reported that it was now dealing 
 		<ol>
 			<li><code>nobodylikestrump</code> used 9 times on 8 tweets</li><li><code>freeculture</code> used 6 times </li><li><code>bookclub</code> used 6 times </li><li><code>linkdump</code> used 6 times </li><li><code>socialmedia</code> used 6 times </li>
 		</ol>
-		<p><em>118 hashtags on 117 tweets (1.5% of all tweets***)</em></p>
+		<p><em>146 hashtags on 145 tweets (1.8% of all tweets***)</em></p>
 		<h2 id="swears">Top 5 Swear Words</h2>
 		<ol>
-			<li><code>h_ll</code> used 31 times on 30 tweets</li><li><code>j_ckass</code> used 22 times </li><li><code>a_s</code> used 16 times on 14 tweets</li><li><code>d_mn</code> used 12 times on 11 tweets</li><li><code>p_rn</code> used 4 times </li>
+			<li><code>h_ll</code> used 32 times on 30 tweets</li><li><code>j_ckass</code> used 22 times </li><li><code>a_s</code> used 17 times on 14 tweets</li><li><code>d_mn</code> used 13 times on 11 tweets</li><li><code>p_rn</code> used 7 times on 4 tweets</li>
 		</ol>
-		<p><em>103 swear words on 98 tweets (1.2% of all tweets***)</em></p>
+		<p><em>115 swear words on 102 tweets (1.3% of all tweets***)</em></p>
 		<p>***: does not include retweets</p>
 
 		<template id="rendered-twitter-link"><a href="/twitter/1234567890123456789/">twitter link</a></template>
